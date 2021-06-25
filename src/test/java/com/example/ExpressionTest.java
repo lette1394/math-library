@@ -10,6 +10,7 @@ import static com.example.Operations.derive;
 import static com.example.Operations.eval;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.example.scala.OperationsScala;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 

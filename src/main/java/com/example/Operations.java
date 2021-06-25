@@ -1,7 +1,10 @@
 package com.example;
 
-import static com.example.ExprFactory.*;
+import static com.example.ExprFactory.con;
+import static com.example.ExprFactory.mul;
+import static com.example.ExprFactory.ne;
 import static com.example.ExprFactory.pow;
+import static com.example.ExprFactory.sum;
 import static java.lang.Math.negateExact;
 import static java.lang.Math.pow;
 
@@ -52,7 +55,7 @@ public class Operations {
       }
       return mul(con(power),
         mul(pow(e.expr(), power - 1),
-        derive(e.expr())));
+          derive(e.expr())));
     }
     if (expr instanceof VarExpr e) {
       return e;

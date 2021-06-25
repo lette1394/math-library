@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'scala'
+    id 'idea'
 }
 
 group 'org.example'
@@ -11,10 +12,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.scala-lang:scala-library:2.11.12'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation 'org.scala-lang:scala-library:2.13.6'
+    testImplementation 'org.scalatest:scalatest_2.13:3.1.1'
 }
+
 
 test {
     useJUnitPlatform()
